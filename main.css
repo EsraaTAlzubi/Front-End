@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    color: #333333;
+    overflow-x: hidden;
+}
+header{
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.0em;
+    margin-left: 7%;
+    padding: 12px 10px 20px 10px;
+    width: 100%;
+    letter-spacing: 0;
+}
+.main-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+.main-flex img{
+    height: 300px;
+    align-self: center;
+    padding: 15px;
+    object-fit: contain;
+}
+.text-content h2{
+    padding-top: 10px;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 2.2em;
+    overflow-y: hidden;
+}
+.text-content p{
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 1.3px;
+    padding: 20px 0px;
+    color: #4f4f4f;
+}
+.text-content button{
+    padding: 20px;
+    color: #ffffff;
+    font-size: 0.9em;
+    background: #696464;
+    border: none;
+    font-weight: 300;
+    transition: all 0.8s ease;
+}
+.text-content button:hover{
+    background-color: #60588E;
+    padding: 25px;
+    cursor: pointer;
+}
+.text-content button:focus{
+    outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -moz-outline: none;
+}
+footer{
+    font-family: 'Montserrat', sans-serif;
+    position: static;
+    bottom: 0;
+    padding: 45px 0px 35px 0px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+@media (min-width:730px){
+    .main-flex{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 15px;
+        height: 500px;
+    }
+    .main-flex img{
+        margin-left: 0;
+    }
+    .main-flex h2{
+        padding-top: 20px;
+        padding-bottom: 25px;
+        font-size: 2.5em;
+    }
+    .main-flex p{
+        padding-bottom: 50px;
+        font-size: 1.4em;
+        line-height: 35px;
+    }
+    .main-flex button{
+        font-size: 1em;
+    }
+    footer{
+        font-size: 1.2em;
+    }
+}
+@media (min-width:780px){
+    .main-flex img{
+        margin-left: 8%;
+    }
+}
+@media (min-width:1030px){
+    .main-flex img{
+        margin-left: 17%;
+    }
+}
